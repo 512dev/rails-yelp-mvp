@@ -15,3 +15,11 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.inline {
+	display: inline-block;
+}
+.info-card{
+	height: 500px;
+	box-shadow: 2px 2px 4px grey;
+}

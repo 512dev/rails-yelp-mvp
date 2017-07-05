@@ -1,23 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Restaurants</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Content</th>
-      <th>Rating</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @review.each do |review| %>
-      <tr>
-        <td><%= review.content %></td>
-        <td><%= review.rating %></td>
-      </tr>
+<h1>Reviews</h1>
+  <ul>
+    <% @reviews.each do |review| %>
+        <li><%= review.content %></li>
+        <li><%= review.rating %></li>
     <% end %>
-  </tbody>
-</table>
+  </ul>
 
-<%= link_to 'New Review', new_review_path %>
+
+<%= link_to 'New Review', new_restaurant_review_path(@restaurant) %>
